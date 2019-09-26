@@ -20,12 +20,11 @@ app.use(morgan("dev"))
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({extended : false}));
 app.use('/wiki' , wiki);
-app.use('/wiki', users);
+//app.use('/wiki', users);
 
 
-app.get("/",(req,res) => {
-    console.log("hello world")
-    res.send(layout(" "))
+app.get("/", (req, res) => {
+    res.redirect('/wiki');
 })
 
 

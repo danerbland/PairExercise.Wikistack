@@ -1,7 +1,7 @@
 
 const Sequelize = require('sequelize');
 const db = new Sequelize('postgres://localhost:5432/wikistack', {
-    logging: true
+    logging: false
 });
 
 
@@ -13,8 +13,8 @@ const Page = db.define('page', {
     allowNull: false
   },
   slug: {
-    type: Sequelize.STRING.apply,
-    allowNull:false
+    type: Sequelize.STRING
+    // allowNull:false
   },
   content: {
     type: Sequelize.TEXT,
