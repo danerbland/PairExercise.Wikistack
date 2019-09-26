@@ -10,7 +10,7 @@ router.get('/' , (req , res)=>{
 router.post('/' , (req , res) => {
     res.send('post # 2')
 })
-router.get('/' , (re, res)=>{
+router.get('/add' , (re, res)=>{
     res.send('post#3')
 })
 

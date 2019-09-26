@@ -6,6 +6,8 @@ const { db , Page , User } = require('./models');
 const users = require('./routes/user')
 const wiki = require('./routes/wiki')
 
+
+
 db.authenticate().
 then(() => {
   console.log('connected to the database');
