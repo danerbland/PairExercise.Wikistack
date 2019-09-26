@@ -1,0 +1,16 @@
+{
+  "name": "WIKI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wiki.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^5.19.0",
+    "sqlite3": "^4.1.0"
+  }
+}
